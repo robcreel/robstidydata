@@ -72,4 +72,4 @@ for(col_index in 3:ncol(df_mean_std)){
 names(tidy_data) <- names(df_mean_std)
 # 5.4 Save the data frame to the directory containing "UCI HAR Dataset".
 setwd("..")
-write.table(tidy_data, "Motion_Means.txt")
+write.table(tidy_data, "Motion_Means.txt", row.name=FALSE)
